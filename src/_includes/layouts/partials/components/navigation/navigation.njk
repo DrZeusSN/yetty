@@ -3,7 +3,8 @@
   <ul class="menu__items flex-wrap">
     {%- for item in params.collection | eleventyNavigation %}
       <li class="menu__item{% if item.url == params.page.url %} menu__item--active{% endif %}">
-        <a class="menu__link" href="{{ item.url | url }}" {% if item.url == params.page.url %}aria-label="Current page, {{ item.title }}"{% endif %}>{{ item.title }}</a>
+        <a class="menu__link" href="{{ item.url | url }}" {% if item.url == params.page.url %}aria-label="Current page, {{ item.title }}"{% endif %}>{{ item.title }}</a>                <a class="menu__link" href="{{ item.url | url }}" {% if item.url == params.page.url %}aria-label="Current page, {{ item.title }}"{% endif %}>{{ item.title }}</a>
+        <a class="menu__link" href="https://snydernation.com" target="_blank">SnyderNation</a>
       </li>
     {%- endfor %}
     {% if params.hasButton %}
