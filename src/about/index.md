@@ -10,7 +10,7 @@ imgBorderColor: '#3f51b5'
 pageClass: page-about
 eleventyNavigation:
   key: About
-  order: 3
+  order: 2
 ---
 
 {% imageMd imgUrl, imgAlt, imgSize, pictureClass, imgClass, imgBorderColor %}
